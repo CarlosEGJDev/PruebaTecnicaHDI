@@ -8,7 +8,6 @@
 
   <ItemGroup>
     <Folder Include="Domain\Enums\" />
-    <Folder Include="Infraestructure\Configurations\" />
     <Folder Include="Infraestructure\Persistence\" />
   </ItemGroup>
 
