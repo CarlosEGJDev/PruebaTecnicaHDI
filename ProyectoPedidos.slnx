@@ -1,0 +1,10 @@
+<Solution>
+  <Project Path="Api/Api.csproj" />
+  <Project Path="Blazor/Blazor.csproj" />
+  <Project Path="Module.Notifications/Module.Notifications.csproj" />
+  <Project Path="Module.Orders/Module.Orders.csproj" />
+  <Project Path="Module.Users/Module.Users.csproj" />
+  <Project Path="Modules.Products/Modules.Products.csproj" />
+  <Project Path="Shared/Shared.csproj" />
+  <Project Path="Tests/Tests.csproj" />
+</Solution>
