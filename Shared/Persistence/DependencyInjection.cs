@@ -6,11 +6,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Module.Orders.Infraestructure
+namespace Shared.Persistence
 {
     public static class DependencyInjection
     {
-        public static IServiceCollection AddOrdersModule(this IServiceCollection services, IConfiguration configuration)
+        public static IServiceCollection AddSharedModule(this IServiceCollection services, IConfiguration configuration)
         {
             //services.AddDbContext<OrdersDbContext>(options => options.UseOracle(configuration.GetConnectionString("Oracle")));
 
