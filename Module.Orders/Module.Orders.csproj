@@ -11,12 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Application\DTOs\" />
-    <Folder Include="Application\Interfaces\" />
-    <Folder Include="Application\Services\" />
-    <Folder Include="Infraestructure\Configurations\" />
     <Folder Include="Infraestructure\Persistence\" />
-    <Folder Include="Infraestructure\Repositories\" />
   </ItemGroup>
 
   <ItemGroup>
