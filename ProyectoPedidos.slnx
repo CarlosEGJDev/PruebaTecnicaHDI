@@ -1,9 +1,9 @@
 <Solution>
   <Project Path="Api/Api.csproj" />
   <Project Path="Blazor/Blazor.csproj" />
+  <Project Path="Module.Customers/Module.Customers.csproj" Id="d0a3cf45-f1a7-47ce-b031-bbad05bedaf1" />
   <Project Path="Module.Notifications/Module.Notifications.csproj" />
   <Project Path="Module.Orders/Module.Orders.csproj" />
-  <Project Path="Module.Users/Module.Users.csproj" />
   <Project Path="Modules.Products/Modules.Products.csproj" />
   <Project Path="Shared/Shared.csproj" />
   <Project Path="Tests/Tests.csproj" />

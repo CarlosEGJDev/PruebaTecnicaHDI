@@ -11,9 +11,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Module.Customers\Module.Customers.csproj" />
     <ProjectReference Include="..\Module.Notifications\Module.Notifications.csproj" />
     <ProjectReference Include="..\Module.Orders\Module.Orders.csproj" />
-    <ProjectReference Include="..\Module.Users\Module.Users.csproj" />
     <ProjectReference Include="..\Modules.Products\Modules.Products.csproj" />
     <ProjectReference Include="..\Shared\Shared.csproj" />
   </ItemGroup>
