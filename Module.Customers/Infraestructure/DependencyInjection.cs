@@ -18,6 +18,7 @@ namespace Module.Customers.Infraestructure
         public static IServiceCollection AddCustomerModule(this IServiceCollection services,IConfiguration configuration)
         {
             services.AddDbContext<CustomerDBContext>(options => options.UseOracle(configuration.GetConnectionString("Oracle")));
+
             services.AddScoped<IClienteService, ClienteService>();
             services.AddScoped<IClienteRepository, ClienteRepository>();
 
