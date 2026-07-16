@@ -2,7 +2,6 @@
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Modules.Products.Domain.Entities;
-using Shared.Persistence;
 using System;
 using System.Collections.Generic;
 using System.Linq;
