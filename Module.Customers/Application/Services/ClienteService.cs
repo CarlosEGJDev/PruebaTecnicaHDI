@@ -12,11 +12,9 @@ namespace Module.Customers.Application.Services
     public class ClienteService(IClienteRepository clienteRepository) : IClienteService
     {
 
-        private readonly IClienteRepository _clienteRepository = clienteRepository;
-
         public async Task<List<ClienteDTO>> GetAllAsync()
         {
-            var data = await _clienteRepository.GetAllAsync();
+            var data = await clienteRepository.GetAllAsync();
             var listar = new List<ClienteDTO>();
 
             foreach(var item in data)
@@ -34,7 +32,7 @@ namespace Module.Customers.Application.Services
 
         public async Task<ClienteDTO?> GetByIdAsync(long Id)
         {
-            var data = await _clienteRepository.GetByIdAsync(Id);
+            var data = await clienteRepository.GetByIdAsync(Id);
 
             if (data == null)
                 return null;
