@@ -3,8 +3,9 @@ using Module.Customers.Application.Interfaces;
 
 namespace Api.Controllers
 {
+    [ApiController]
     [Route("api/[controller]")]
-    public class ClienteController : Controller
+    public class ClienteController : ControllerBase
     {
         private readonly IClienteService _clienteService;
 
@@ -21,7 +22,7 @@ namespace Api.Controllers
         }
 
         [HttpGet("{id}")]
-        public async Task<IActionResult> GetClienteById(int id)
+        public async Task<IActionResult> GetClienteById(long id)
         {
             var cliente = await _clienteService.GetByIdAsync(id);
             if (cliente == null)
