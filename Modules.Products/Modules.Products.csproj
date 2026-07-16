@@ -14,11 +14,14 @@
     <Folder Include="Application\DTOs\" />
     <Folder Include="Application\Interfaces\" />
     <Folder Include="Application\Services\" />
-    <Folder Include="Domain\Entities\" />
     <Folder Include="Domain\Enums\" />
     <Folder Include="Infraestructure\Configurations\" />
     <Folder Include="Infraestructure\Persistence\" />
     <Folder Include="Infraestructure\Repositories\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.29" />
   </ItemGroup>
 
 </Project>
