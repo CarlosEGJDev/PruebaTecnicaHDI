@@ -1,6 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Modules.Products.Domain.Entities;
-using Shared.Persistence;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,6 +10,8 @@ namespace Modules.Products.Infraestructure
 {
     public class ProductosDbContext : DbContext
     {
+
+        public ProductosDbContext(DbContextOptions<ProductosDbContext> options) : base(options) { }
         public DbSet<Producto> Productos => Set<Producto>();
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -18,7 +19,7 @@ namespace Modules.Products.Infraestructure
             base.OnModelCreating(modelBuilder);
 
             // Aplica automáticamente todas las configuraciones
-            modelBuilder.ApplyConfigurationsFromAssembly(typeof(AppDbContext).Assembly);
+            modelBuilder.ApplyConfigurationsFromAssembly(typeof(ProductosDbContext).Assembly);
         }
     }
 }

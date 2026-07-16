@@ -1,6 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Module.Orders.Domain.Entities;
-using Shared.Persistence;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,6 +10,8 @@ namespace Module.Orders.Infraestructure
 {
     public class OrdersDbContext : DbContext
     {
+        public OrdersDbContext(DbContextOptions<OrdersDbContext> options) : base(options) { }
+
         public DbSet<Pedido> Pedidos => Set<Pedido>();
         public DbSet<DetallePedido> DetallesPedidos => Set<DetallePedido>();
 
@@ -19,7 +20,7 @@ namespace Module.Orders.Infraestructure
             base.OnModelCreating(modelBuilder);
 
             // Aplica automáticamente todas las configuraciones
-            modelBuilder.ApplyConfigurationsFromAssembly(typeof(AppDbContext).Assembly);
+            modelBuilder.ApplyConfigurationsFromAssembly(typeof(OrdersDbContext).Assembly);
         }
     }
 }
